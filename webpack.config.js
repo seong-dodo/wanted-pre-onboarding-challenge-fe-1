@@ -11,7 +11,7 @@ module.exports = {
 
   devServer: {
     host: "localhost",
-    port: 8080,
+    port: 8000,
     open: true,
     watchFiles: 'index.html',
     historyApiFallback: true,
