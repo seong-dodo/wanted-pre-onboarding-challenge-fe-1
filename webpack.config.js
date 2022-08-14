@@ -1,8 +1,8 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: "./src/index.js",
 
   output: {
     filename: "main.js",
@@ -13,18 +13,18 @@ module.exports = {
     host: "localhost",
     port: 8000,
     open: true,
-    watchFiles: 'index.html',
+    watchFiles: "index.html",
     historyApiFallback: true,
   },
-  
+
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
-    })
+      template: "./src/index.html",
+    }),
   ],
 
   resolve: {
-    extensions: [".js", ".jsx",".ts",".tsx"]
+    extensions: [".js", ".jsx"],
   },
 
   module: {
@@ -32,21 +32,12 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        use: 'babel-loader',
-      },
-      {
-        test: /\.tsx?$/,
-        exclude: /node_modules/,
-        use: 'ts-loader',
+        use: "babel-loader",
       },
       {
         test: /\.s?css$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader',
-        ]
-      }
-     ]
-  }
-}
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+    ],
+  },
+};
