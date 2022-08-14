@@ -44,7 +44,7 @@ const SignUp = () => {
     if (e.key !== "Enter") return;
     if (signFields.email === "" || signFields.password === "") return;
 
-    await postSignUp();
+    onSubmit();
   };
 
   const onSubmit = async () => {
