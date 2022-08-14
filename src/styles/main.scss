@@ -1,0 +1,79 @@
+@import "./gobalStyle.scss";
+@import "./commonStyle.scss";
+
+#app {
+  @include reset-layout;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+}
+.header {
+  @include center;
+  width: 100%;
+  height: 80px;
+}
+.navBar {
+  @include center;
+  margin: 20px auto;
+  &-item {
+    padding: 10px 20px;
+    text-align: center;
+    & + & {
+      margin-left: 20px;
+    }
+    a {
+      @extend .navBar-item;
+    }
+    a:hover {
+      font-weight: 700;
+    }
+  }
+}
+.login {
+  margin: 0 auto;
+  text-align: center;
+  &-title {
+    padding: 30px;
+  }
+  &-form {
+    padding: 24px;
+    & label {
+      margin-right: 10px;
+    }
+    & input {
+      margin-right: 20px;
+    }
+  }
+}
+.logout {
+  margin: 0 auto;
+  text-align: center;
+  &-title {
+    padding: 30px;
+  }
+}
+.signUp {
+  margin: 0 auto;
+  text-align: center;
+  &-title {
+    padding: 30px;
+  }
+  &-form {
+    padding: 24px;
+    & label {
+      margin-right: 10px;
+    }
+    & input {
+      margin-right: 20px;
+    }
+  }
+}
+.todo {
+  margin: 0 auto;
+  text-align: center;
+  &-title {
+    padding: 30px;
+  }
+}
