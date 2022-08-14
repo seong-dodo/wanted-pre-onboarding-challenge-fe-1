@@ -1,10 +1,8 @@
-import React from 'react'
-import Todos from '../../components/todo/todos'
+import React from "react";
+import Todos from "../../components/todo/todos";
 
 const TodoPage = () => {
-  return (
-    <Todos />
-  )
-}
+  return <Todos />;
+};
 
-export default TodoPage
+export default TodoPage;
