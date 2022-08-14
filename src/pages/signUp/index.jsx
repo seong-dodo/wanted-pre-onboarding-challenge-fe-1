@@ -1,9 +1,7 @@
 import SignUp from "../../components/auth/signUp";
 
-const signUpage = () => {
-  return (
-    <SignUp />
-  )
-}
+const SignUpage = () => {
+  return <SignUp />;
+};
 
-export default signUpage;
+export default SignUpage;
