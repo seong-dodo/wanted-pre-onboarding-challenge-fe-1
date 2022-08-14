@@ -1,6 +1,7 @@
-import Todos from  "../../components/todo/todos";
+import React from 'react'
+import Todos from '../../components/todo/todos'
 
-const TodoPage =() => {
+const TodoPage = () => {
   return (
     <Todos />
   )
