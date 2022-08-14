@@ -105,7 +105,11 @@ const SignUp = () => {
           onKeyPress={(e) => onKeypress(e)}
           autoComplete="off"
         />
-        <button type="button" onClick={onSubmit}>
+        <button
+          type="button"
+          onClick={onSubmit}
+          disabled={signFields.email === "" || signFields.password === ""}
+        >
           가입하기
         </button>
       </div>
