@@ -1,4 +1,5 @@
 import React from "react";
+import { isLogin } from "../storage/storage";
 
 const MainPage = () => {
   return (
@@ -15,9 +16,11 @@ const MainPage = () => {
         <li className="navBar-item">
           <a href="/login">로그인</a>
         </li>
-        <li className="navBar-item">
-          <a href="/signUp">회원가입</a>
-        </li>
+        {!isLogin() && (
+          <li className="navBar-item">
+            <a href="/signUp">회원가입</a>
+          </li>
+        )}
       </ul>
     </div>
   );
